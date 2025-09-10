@@ -8,18 +8,18 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #1a202c;
-            color: #e2e8f0;
+            background-color: #0d1117; /* A professional, dark blue-gray */
+            color: #c9d1d9; /* Light gray for readability */
         }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-200">
+<body class="bg-[#0d1117] text-[#c9d1d9]">
 
     <!-- Header & Navigation -->
-    <header class="py-6 px-4 md:px-8">
+    <header class="py-6 px-4 md:px-8 bg-gray-900 bg-opacity-50 backdrop-blur-sm sticky top-0 z-50 transition-shadow duration-300">
         <nav class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-gray-100">Kaung San Thar</h1>
-            <div class="flex items-center space-x-4">
+            <h1 class="text-3xl font-extrabold text-white">Kaung San Thar</h1>
+            <div class="flex items-center space-x-6">
                 <a href="#projects" class="text-gray-400 hover:text-white transition-colors duration-300">Projects</a>
                 <a href="#skills" class="text-gray-400 hover:text-white transition-colors duration-300">Skills</a>
                 <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
@@ -32,14 +32,13 @@
         <!-- Hero Section -->
         <section id="hero" class="text-center py-20 md:py-32">
             <div class="flex flex-col items-center">
-                <!-- Profile Picture - Using inline styles for a guaranteed fix -->
                 <img src="KaungSanThar.png"
                     alt="Profile Picture"
-                    class="rounded-full border-4 border-gray-700 mb-6"
-                    style="width: 112px; height: 112px; object-fit: cover;">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-2">Hello, I'm <span class="text-purple-400">Kaung San Thar</span>.</h2>
+                    class="rounded-full border-4 border-blue-400 mb-6"
+                    style="width: 200px; height: 200px; object-fit: cover;">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-2">Hello, I'm <span class="text-teal-400">Kaung San Thar</span>.</h2>
                 <p class="text-xl md:text-2xl font-light text-gray-400 mb-6">An Aspiring Data Scientist | Seeking Internship Opportunities</p>
-                <p class="max-w-xl text-md md:text-lg text-gray-400">
+                <p class="max-w-xl text-md md:text-lg text-gray-300">
                     Passionate about applying **data analytics** and **machine learning** to solve real-world problems. I'm actively seeking a data science internship to apply my skills and contribute to a team.
                 </p>
             </div>
@@ -47,42 +46,42 @@
 
         <!-- Projects Section -->
         <section id="projects" class="py-16">
-            <h3 class="text-4xl font-bold text-center text-white mb-10">Featured Projects</h3>
+            <h3 class="text-4xl font-extrabold text-center text-white mb-10">Featured Projects</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Project Card 1: AI Text-to-Speech Generator -->
-                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6">
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
                     <h4 class="text-2xl font-semibold text-white mb-2">AI Text-to-Speech Generator</h4>
                     <p class="text-gray-400 mb-4">A web application developed using **Python**, **Streamlit**, and the **ElevenLabs API** to provide lifelike speech synthesis with voice tuning and playback.</p>
-                    <a href="https://github.com/KaungSanThar420/AI-Text-to-Speech-Generator..git" class="ml-4 inline-block text-gray-400 hover:text-white font-medium transition-colors duration-300">GitHub →</a>
+                    <a href="https://github.com/KaungSanThar420/AI-Text-to-Speech-Generator..git" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">View on GitHub →</a>
                 </div>
 
                 <!-- Project Card 2: Lazada Online Shopping System -->
-                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6">
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
                     <h4 class="text-2xl font-semibold text-white mb-2">Lazada Online Shopping System</h4>
                     <p class="text-gray-400 mb-4">A Java-based e-commerce application with a graphical user interface. It features user authentication, product browsing, a shopping cart, and a checkout system.</p>
-                    <a href="#" class="ml-4 inline-block text-gray-400 hover:text-white font-medium transition-colors duration-300">GitHub →</a>
+                    <a href="#" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">View on GitHub →</a>
                 </div>
 
                 <!-- Project Card 3: Smart Automated Plant Watering System (IoT) -->
-                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6">
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
                     <h4 class="text-2xl font-semibold text-white mb-2">Smart Automated Plant Watering System</h4>
                     <p class="text-gray-400 mb-4">An **IoT-based** system designed to automate plant watering. It integrates **sensors** and **microcontrollers** for real-time moisture monitoring and control.</p>
-                    <a href="#" class="ml-4 inline-block text-gray-400 hover:text-white font-medium transition-colors duration-300">GitHub →</a>
+                    <a href="#" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">View on GitHub →</a>
                 </div>
 
                 <!-- Project Card 4: Breast Cancer Classification -->
-                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6">
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
                     <h4 class="text-2xl font-semibold text-white mb-2">Breast Cancer Classification</h4>
                     <p class="text-gray-400 mb-4">A **machine learning** project that built models (**Logistic Regression**, **Random Forest**) for cancer diagnosis. The project involved data preprocessing, **EDA**, and feature correlation analysis.</p>
-                    <a href="#" class="ml-4 inline-block text-gray-400 hover:text-white font-medium transition-colors duration-300">GitHub →</a>
+                    <a href="#" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">View on GitHub →</a>
                 </div>
 
                 <!-- Project Card 5: Stamford Library Management System -->
-                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6">
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
                     <h4 class="text-2xl font-semibold text-white mb-2">Stamford Library Management System</h4>
                     <p class="text-gray-400 mb-4">A **Java-based** library management application with a **GUI**. Key features include viewing available books, borrowing and returning books, and providing user feedback.</p>
-                    <a href="#" class="ml-4 inline-block text-gray-400 hover:text-white font-medium transition-colors duration-300">GitHub →</a>
+                    <a href="#" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">View on GitHub →</a>
                 </div>
 
             </div>
@@ -90,28 +89,28 @@
 
         <!-- Skills Section -->
         <section id="skills" class="py-16">
-            <h3 class="text-4xl font-bold text-center text-white mb-10">Skills</h3>
+            <h3 class="text-4xl font-extrabold text-center text-white mb-10">Skills</h3>
             <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="bg-gray-800 rounded-xl p-4">Python & Streamlit</div>
-                <div class="bg-gray-800 rounded-xl p-4">Machine Learning</div>
-                <div class="bg-gray-800 rounded-xl p-4">Data Analytics</div>
-                <div class="bg-gray-800 rounded-xl p-4">Data Visualization</div>
-                <div class="bg-gray-800 rounded-xl p-4">SQL & Databases</div>
-                <div class="bg-gray-800 rounded-xl p-4">HTML5 & CSS3</div>
-                <div class="bg-gray-800 rounded-xl p-4">Git & GitHub</div>
-                <div class="bg-gray-800 rounded-xl p-4">IoT & Java</div>
+                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">Python & Streamlit</div>
+                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">Machine Learning</div>
+                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">Data Analytics</div>
+                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">Data Visualization</div>
+                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">SQL & Databases</div>
+                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">HTML5 & CSS3</div>
+                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">Git & GitHub</div>
+                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">IoT & Java</div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="py-16 text-center">
-            <h3 class="text-4xl font-bold text-white mb-6">Let's Connect</h3>
+            <h3 class="text-4xl font-extrabold text-white mb-6">Let's Connect</h3>
             <p class="text-xl text-gray-400 mb-8">I'm excited about new opportunities. Feel free to reach out!</p>
             <div class="flex flex-wrap justify-center space-x-4">
-                <a href="mailto:2211020004@students.stamford.edu" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 mb-4">Email Me</a>
+                <a href="mailto:mgkaungsanthar@gmail.com" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 mb-4">Email Me</a>
                 <!-- Update the following links with your actual GitHub and LinkedIn profiles -->
-                <a href="https://github.com/KaungSanThar420" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 mb-4">GitHub</a>
-                <a href="https://www.linkedin.com/in/kaung-san-thar-645839265" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 mb-4">LinkedIn</a>
+                <a href="https://github.com/KaungSanThar420" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 mb-4">GitHub</a>
+                <a href="https://www.linkedin.com/in/kaung-san-thar-645839265" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 mb-4">LinkedIn</a>
             </div>
         </section>
 
