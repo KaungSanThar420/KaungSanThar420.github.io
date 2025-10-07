@@ -1,126 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaung San Thar - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0d1117; /* A professional, dark blue-gray */
-            color: #c9d1d9; /* Light gray for readability */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kaung San Thar - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      background-color: #0d1117; /* dark blue-gray */
+      color: #c9d1d9;           /* light gray for readability */
+    }
+  </style>
 </head>
 <body class="bg-[#0d1117] text-[#c9d1d9]">
 
-    <!-- Header & Navigation -->
-    <header class="py-6 px-4 md:px-8 bg-gray-900 bg-opacity-50 backdrop-blur-sm sticky top-0 z-50 transition-shadow duration-300">
-        <nav class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-extrabold text-white">Kaung San Thar</h1>
-            <div class="flex items-center space-x-6">
-                <a href="#projects" class="text-gray-400 hover:text-white transition-colors duration-300">Projects</a>
-                <a href="#skills" class="text-gray-400 hover:text-white transition-colors duration-300">Skills</a>
-                <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
-            </div>
-        </nav>
-    </header>
+  <!-- Header & Navigation -->
+  <header class="py-4 md:py-6 px-4 md:px-8 bg-gray-900/70 backdrop-blur-sm sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl md:text-3xl font-extrabold text-white">Kaung San Thar</h1>
+      <div class="flex items-center gap-4 md:gap-6 text-sm md:text-base">
+        <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+        <a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a>
+        <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <main class="container mx-auto px-4 md:px-8">
+  <main class="max-w-6xl mx-auto px-4 md:px-8">
 
-        <!-- Hero Section -->
-        <section id="hero" class="text-center py-20 md:py-32">
-            <div class="flex flex-col items-center">
-                <img src="KaungSanThar.png"
-                    alt="Profile Picture"
-                    class="rounded-full border-4 border-blue-400 mb-6"
-                    style="width: 200px; height: 200px; object-fit: cover;">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-2">Hello, I'm <span class="text-teal-400">Kaung San Thar</span>.</h2>
-                <p class="text-xl md:text-2xl font-light text-gray-400 mb-6">An Aspiring Data Scientist | Seeking Internship Opportunities</p>
-                <p class="max-w-xl text-md md:text-lg text-gray-300">
-                    I am a dedicated student with a strong passion for data science and machine learning. I am actively seeking an internship to apply my developing skills and contribute to a team while gaining valuable, real-world experience.
-                </p>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="hero" class="text-center py-16 md:py-24">
+      <div class="flex flex-col items-center">
+        <img
+          src="KaungSanThar.png"
+          alt="Portrait of Kaung San Thar"
+          class="rounded-full border-4 border-blue-400 mb-6"
+          style="width: 200px; height: 200px; object-fit: cover;"
+          loading="lazy"
+        />
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-2">
+          Hello, I'm <span class="text-teal-400">Kaung San Thar</span>.
+        </h2>
+        <p class="text-lg md:text-2xl font-light text-gray-400 mb-6">
+          Aspiring Data Scientist | Seeking Internship Opportunities
+        </p>
+        <p class="max-w-2xl text-base md:text-lg text-gray-300 leading-relaxed">
+          I’m a dedicated student with a strong passion for data science and machine learning. I’m actively seeking an internship to apply my skills and contribute to a team while gaining real-world experience.
+        </p>
+      </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-16">
-            <h3 class="text-4xl font-extrabold text-center text-white mb-10">Featured Projects</h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 md:py-16">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-center text-white mb-10">Featured Projects</h3>
 
-                <!-- Project Card 1: AI Text-to-Speech Generator -->
-                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
-                    <h4 class="text-2xl font-semibold text-white mb-2">AI Text-to-Speech Generator</h4>
-                    <p class="text-gray-400 mb-4">Developed a web application using Python and the Streamlit framework, integrating the ElevenLabs API to provide realistic speech synthesis. The application features voice tuning and playback functionalities, offering a robust tool for generating lifelike audio from text.</p>
-                    <a href="https://github.com/KaungSanThar420/AI-Text-to-Speech-Generator..git" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">View on GitHub →</a>
-                </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-                <!-- Project Card 2: Lazada Online Shopping System -->
-                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
-                    <h4 class="text-2xl font-semibold text-white mb-2">Lazada Online Shopping System</h4>
-                    <p class="text-gray-400 mb-4">Created a Java-based e-commerce application with a graphical user interface. The system includes core functionalities such as user authentication, product browsing, a shopping cart, and a secure checkout process, demonstrating a comprehensive understanding of front-end and back-end development principles.</p>
-                    <a href="https://github.com/KaungSanThar420/Lazada-Online-Shopping-System.git" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">View on GitHub →</a>
-                </div>
+        <!-- Project Card 1: AI Text-to-Speech Generator -->
+        <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
+          <h4 class="text-2xl font-semibold text-white mb-2">AI Text-to-Speech Generator</h4>
+          <p class="text-gray-400 mb-4">
+            Streamlit app integrating the ElevenLabs API for realistic speech synthesis with voice tuning and playback.
+          </p>
+          <a href="https://github.com/KaungSanThar420/AI-Text-to-Speech-Generator" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+        </div>
 
-                <!-- Project Card 3: Smart Automated Plant Watering System (IoT) -->
-                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
-                    <h4 class="text-2xl font-semibold text-white mb-2">Smart Automated Plant Watering System</h4>
-                    <p class="text-gray-400 mb-4">Engineered an IoT-based system for automated plant watering. This solution integrates sensors for real-time moisture monitoring with microcontrollers to regulate watering, ensuring optimal plant health through a responsive and efficient control mechanism.</p>
-                    <a href="https://github.com/KaungSanThar420/Smart-Plant-Watering-IoT.git" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">View on GitHub →</a>
-                </div>
+        <!-- Project Card 2: Lazada Online Shopping System -->
+        <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
+          <h4 class="text-2xl font-semibold text-white mb-2">Lazada Online Shopping System</h4>
+          <p class="text-gray-400 mb-4">
+            Java-based e-commerce GUI: authentication, product browsing, cart, and secure checkout.
+          </p>
+          <a href="https://github.com/KaungSanThar420/Lazada-Online-Shopping-System" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+        </div>
 
-                <!-- Project Card 4: Breast Cancer Classification -->
-                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
-                    <h4 class="text-2xl font-semibold text-white mb-2">Breast Cancer Classification</h4>
-                    <p class="text-gray-400 mb-4">Completed a machine learning project focused on the diagnosis of breast cancer. The project involved building and evaluating predictive models using algorithms such as Logistic Regression and Random Forest. Key steps included data preprocessing, Exploratory Data Analysis (EDA), and a thorough feature correlation analysis to ensure model accuracy and reliability.</p>
-                    <a href="https://github.com/KaungSanThar420/Breast-Cancer-Classification.git" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">View on GitHub →</a>
-                </div>
-                
-                <!-- Project Card 5: SneakerVerse E-commerce Website -->
-                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
-                    <h4 class="text-2xl font-semibold text-white mb-2">SneakerVerse E-commerce Website</h4>
-                    <p class="text-gray-400 mb-4">Developed a multi-page responsive sneaker shopping website as a final project for Web Development. Implemented product search, filtering, sorting, and a shopping cart using JavaScript, jQuery, and LocalStorage. Integrated Ajax to load product data and handle contact form submissions, ensuring a smooth user experience across devices.</p>
-                    <a href="https://github.com/KaungSanThar420/SneakerVerse.git" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors duration-300">View on GitHub →</a>
-                </div>
+        <!-- Project Card 3: Smart Automated Plant Watering System (IoT) -->
+        <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
+          <h4 class="text-2xl font-semibold text-white mb-2">Smart Automated Plant Watering System</h4>
+          <p class="text-gray-400 mb-4">
+            IoT system with soil moisture sensing and microcontroller-driven watering for optimal plant health.
+          </p>
+          <a href="https://github.com/KaungSanThar420/Smart-Plant-Watering-IoT" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+        </div>
 
+        <!-- Project Card 4: Breast Cancer Classification -->
+        <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
+          <h4 class="text-2xl font-semibold text-white mb-2">Breast Cancer Classification</h4>
+          <p class="text-gray-400 mb-4">
+            ML classification using Logistic Regression and Random Forest with EDA and feature correlation analysis.
+          </p>
+          <a href="https://github.com/KaungSanThar420/Breast-Cancer-Classification" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+        </div>
 
-            </div>
-        </section>
+        <!-- Project Card 5: SneakerVerse E-commerce Website -->
+        <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
+          <h4 class="text-2xl font-semibold text-white mb-2">SneakerVerse E-commerce Website</h4>
+          <p class="text-gray-400 mb-4">
+            Multi-page responsive sneaker shop (Web 1 final). Product search, brand filter, sorting, and cart with JavaScript, jQuery, LocalStorage. Ajax used for product loading and contact handling.
+          </p>
+          <a href="https://github.com/KaungSanThar420/SneakerVerse" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+        </div>
 
-        <!-- Skills Section -->
-        <section id="skills" class="py-16">
-            <h3 class="text-4xl font-extrabold text-center text-white mb-10">Skills</h3>
-            <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">Python & Streamlit</div>
-                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">Machine Learning</div>
-                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">Data Analytics</div>
-                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">Data Visualization</div>
-                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">SQL & Databases</div>
-                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">HTML5 & CSS3</div>
-                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">Git & GitHub</div>
-                <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform duration-300">IoT & Java</div>
-            </div>
-        </section>
+      </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-16 text-center">
-            <h3 class="text-4xl font-extrabold text-white mb-6">Let's Connect</h3>
-            <p class="text-xl text-gray-400 mb-8">I'm excited about new opportunities. Feel free to reach out!</p>
-            <div class="flex flex-wrap justify-center space-x-4">
-                <a href="mailto:mgkaungsanthar@gmail.com" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 mb-4">Email Me</a>
-                <!-- Update the following links with your actual GitHub and LinkedIn profiles -->
-                <a href="https://github.com/KaungSanThar420" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 mb-4">GitHub</a>
-                <a href="https://www.linkedin.com/in/kaung-san-thar-645839265" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 mb-4">LinkedIn</a>
-            </div>
-        </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 md:py-16">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-center text-white mb-10">Skills</h3>
+      <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
+        <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform">Python & Streamlit</div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform">Machine Learning</div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform">Data Analytics</div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform">Data Visualization</div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform">SQL & Databases</div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform">HTML5 & CSS3</div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform">Git & GitHub</div>
+        <div class="bg-gray-800 rounded-xl p-4 shadow-md border border-gray-700 transform hover:scale-105 transition-transform">IoT & Java</div>
+      </div>
+    </section>
 
-    </main>
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 md:py-16 text-center">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Let's Connect</h3>
+      <p class="text-lg md:text-xl text-gray-400 mb-8">
+        I'm excited about new opportunities. Feel free to reach out!
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 md:gap-4">
+        <a href="mailto:mgkaungsanthar@gmail.com" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">Email Me</a>
+        <a href="https://github.com/KaungSanThar420" target="_blank" rel="noopener" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">GitHub</a>
+        <a href="https://www.linkedin.com/in/kaung-san-thar-645839265" target="_blank" rel="noopener" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">LinkedIn</a>
+      </div>
+    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="text-center py-6 mt-12 text-gray-500 text-sm">
-        <p>&copy; 2024 Kaung San Thar. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="text-center py-6 mt-12 text-gray-500 text-sm">
+    <p>&copy; 2024 Kaung San Thar. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
