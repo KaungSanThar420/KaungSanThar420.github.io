@@ -9,9 +9,11 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-      background-color: #0d1117; /* dark blue-gray */
-      color: #c9d1d9;           /* light gray for readability */
+      background-color: #0d1117;
+      color: #c9d1d9;
     }
+    /* Make entire project card header/link area clickable with clear focus */
+    .card-link:focus-visible { outline: 3px solid #14b8a6; outline-offset: 3px; border-radius: 0.75rem; }
   </style>
 </head>
 <body class="bg-[#0d1117] text-[#c9d1d9]">
@@ -30,7 +32,7 @@
 
   <main class="max-w-6xl mx-auto px-4 md:px-8">
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="hero" class="text-center py-16 md:py-24">
       <div class="flex flex-col items-center">
         <img
@@ -52,61 +54,79 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects" class="py-12 md:py-16">
       <h3 class="text-3xl md:text-4xl font-extrabold text-center text-white mb-10">Featured Projects</h3>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-        <!-- Project Card 1: AI Text-to-Speech Generator -->
-        <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
-          <h4 class="text-2xl font-semibold text-white mb-2">AI Text-to-Speech Generator</h4>
+        <!-- Project 1: AI Text-to-Speech Generator -->
+        <article class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 p-6 border border-gray-700">
+          <a class="card-link block" href="https://github.com/KaungSanThar420/AI-Text-to-Speech" target="_blank" rel="noopener" aria-label="AI Text-to-Speech Generator on GitHub">
+            <h4 class="text-2xl font-semibold text-white mb-2 hover:text-teal-300 transition-colors">
+              AI Text-to-Speech Generator
+            </h4>
+          </a>
           <p class="text-gray-400 mb-4">
             Streamlit app integrating the ElevenLabs API for realistic speech synthesis with voice tuning and playback.
           </p>
-          <a href="https://github.com/KaungSanThar420/AI-Text-to-Speech-Generator" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
-        </div>
+          <div class="flex items-center gap-3">
+            <a href="https://github.com/KaungSanThar420/AI-Text-to-Speech" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+            <a href="https://github.com/KaungSanThar420?tab=repositories&q=text%20to%20speech" target="_blank" rel="noopener" class="text-gray-400 hover:text-gray-200 text-sm">Can’t open? Try search</a>
+          </div>
+          <!-- If your repo name is different, replace both hrefs above with your exact URL. -->
+        </article>
 
-        <!-- Project Card 2: Lazada Online Shopping System -->
-        <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
-          <h4 class="text-2xl font-semibold text-white mb-2">Lazada Online Shopping System</h4>
-          <p class="text-gray-400 mb-4">
-            Java-based e-commerce GUI: authentication, product browsing, cart, and secure checkout.
-          </p>
+        <!-- Project 2: Lazada Online Shopping System -->
+        <article class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 p-6 border border-gray-700">
+          <a class="card-link block" href="https://github.com/KaungSanThar420/Lazada-Online-Shopping-System" target="_blank" rel="noopener" aria-label="Lazada Online Shopping System on GitHub">
+            <h4 class="text-2xl font-semibold text-white mb-2 hover:text-teal-300 transition-colors">
+              Lazada Online Shopping System
+            </h4>
+          </a>
+          <p class="text-gray-400 mb-4">Java-based e-commerce GUI: authentication, product browsing, cart, and secure checkout.</p>
           <a href="https://github.com/KaungSanThar420/Lazada-Online-Shopping-System" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
-        </div>
+        </article>
 
-        <!-- Project Card 3: Smart Automated Plant Watering System (IoT) -->
-        <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
-          <h4 class="text-2xl font-semibold text-white mb-2">Smart Automated Plant Watering System</h4>
-          <p class="text-gray-400 mb-4">
-            IoT system with soil moisture sensing and microcontroller-driven watering for optimal plant health.
-          </p>
+        <!-- Project 3: Smart Automated Plant Watering System -->
+        <article class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 p-6 border border-gray-700">
+          <a class="card-link block" href="https://github.com/KaungSanThar420/Smart-Plant-Watering-IoT" target="_blank" rel="noopener" aria-label="Smart Plant Watering IoT on GitHub">
+            <h4 class="text-2xl font-semibold text-white mb-2 hover:text-teal-300 transition-colors">
+              Smart Automated Plant Watering System
+            </h4>
+          </a>
+          <p class="text-gray-400 mb-4">IoT system with soil moisture sensing and microcontroller-driven watering for optimal plant health.</p>
           <a href="https://github.com/KaungSanThar420/Smart-Plant-Watering-IoT" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
-        </div>
+        </article>
 
-        <!-- Project Card 4: Breast Cancer Classification -->
-        <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
-          <h4 class="text-2xl font-semibold text-white mb-2">Breast Cancer Classification</h4>
-          <p class="text-gray-400 mb-4">
-            ML classification using Logistic Regression and Random Forest with EDA and feature correlation analysis.
-          </p>
+        <!-- Project 4: Breast Cancer Classification -->
+        <article class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 p-6 border border-gray-700">
+          <a class="card-link block" href="https://github.com/KaungSanThar420/Breast-Cancer-Classification" target="_blank" rel="noopener" aria-label="Breast Cancer Classification on GitHub">
+            <h4 class="text-2xl font-semibold text-white mb-2 hover:text-teal-300 transition-colors">
+              Breast Cancer Classification
+            </h4>
+          </a>
+          <p class="text-gray-400 mb-4">ML classification using Logistic Regression and Random Forest with EDA and feature correlation analysis.</p>
           <a href="https://github.com/KaungSanThar420/Breast-Cancer-Classification" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
-        </div>
+        </article>
 
-        <!-- Project Card 5: SneakerVerse E-commerce Website -->
-        <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-gray-700">
-          <h4 class="text-2xl font-semibold text-white mb-2">SneakerVerse E-commerce Website</h4>
+        <!-- Project 5: SneakerVerse E-commerce Website -->
+        <article class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 p-6 border border-gray-700">
+          <a class="card-link block" href="https://github.com/KaungSanThar420/SneakerVerse" target="_blank" rel="noopener" aria-label="SneakerVerse on GitHub">
+            <h4 class="text-2xl font-semibold text-white mb-2 hover:text-teal-300 transition-colors">
+              SneakerVerse E-commerce Website
+            </h4>
+          </a>
           <p class="text-gray-400 mb-4">
             Multi-page responsive sneaker shop (Web 1 final). Product search, brand filter, sorting, and cart with JavaScript, jQuery, LocalStorage. Ajax used for product loading and contact handling.
           </p>
           <a href="https://github.com/KaungSanThar420/SneakerVerse" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
-        </div>
+        </article>
 
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section id="skills" class="py-12 md:py-16">
       <h3 class="text-3xl md:text-4xl font-extrabold text-center text-white mb-10">Skills</h3>
       <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
@@ -121,7 +141,7 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="py-12 md:py-16 text-center">
       <h3 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Let's Connect</h3>
       <p class="text-lg md:text-xl text-gray-400 mb-8">
@@ -137,7 +157,7 @@
 
   <!-- Footer -->
   <footer class="text-center py-6 mt-12 text-gray-500 text-sm">
-    <p>&copy; 2024 Kaung San Thar. All rights reserved.</p>
+    <p>&copy; 2025 Kaung San Thar. All rights reserved.</p>
   </footer>
 
 </body>
