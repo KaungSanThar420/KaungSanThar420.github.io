@@ -12,7 +12,10 @@
       background-color: #0d1117;
       color: #c9d1d9;
     }
-    .card-link:focus-visible { outline: 3px solid #14b8a6; outline-offset: 3px; border-radius: 0.75rem; }
+    /* prevent sticky header from covering anchors */
+    section { scroll-margin-top: 88px; }
+    /* focus style for keyboard users */
+    .focus-ring:focus-visible { outline: 3px solid #14b8a6; outline-offset: 3px; border-radius: 0.75rem; }
   </style>
 </head>
 <body class="bg-[#0d1117] text-[#c9d1d9]">
@@ -61,64 +64,58 @@
 
         <!-- Project 1: AI Text-to-Speech Generator -->
         <article class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 p-6 border border-gray-700">
-          <a class="card-link block" href="https://github.com/KaungSanThar420/AI-Text-to-Speech-Generator" target="_blank" rel="noopener" aria-label="AI Text-to-Speech Generator on GitHub">
-            <h4 class="text-2xl font-semibold text-white mb-2 hover:text-teal-300 transition-colors">
-              AI Text-to-Speech Generator
-            </h4>
-          </a>
+          <h4 class="text-2xl font-semibold text-white mb-2">AI Text-to-Speech Generator</h4>
           <p class="text-gray-400 mb-4">
             Streamlit app integrating the ElevenLabs API for realistic speech synthesis with voice tuning and playback.
           </p>
           <div class="flex items-center gap-3">
-            <a href="https://github.com/KaungSanThar420/AI-Text-to-Speech-Generator" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
-            <a href="https://github.com/KaungSanThar420?tab=repositories&q=speech" target="_blank" rel="noopener" class="text-gray-400 hover:text-gray-200 text-sm">Can’t open? Try search</a>
+            <!-- ✅ direct repo link -->
+            <a href="https://github.com/KaungSanThar420/AI-Text-to-Speech-Generator"
+               target="_blank" rel="noopener"
+               class="focus-ring inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+            <!-- optional helper (separate link so it never overrides the main one) -->
+            <a href="https://github.com/KaungSanThar420?tab=repositories&q=AI-Text-to-Speech-Generator"
+               target="_blank" rel="noopener"
+               class="text-gray-400 hover:text-gray-200 text-sm">Search backup</a>
           </div>
         </article>
 
         <!-- Project 2: Lazada Online Shopping System -->
         <article class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 p-6 border border-gray-700">
-          <a class="card-link block" href="https://github.com/KaungSanThar420/Lazada-Online-Shopping-System" target="_blank" rel="noopener" aria-label="Lazada Online Shopping System on GitHub">
-            <h4 class="text-2xl font-semibold text-white mb-2 hover:text-teal-300 transition-colors">
-              Lazada Online Shopping System
-            </h4>
-          </a>
+          <h4 class="text-2xl font-semibold text-white mb-2">Lazada Online Shopping System</h4>
           <p class="text-gray-400 mb-4">Java-based e-commerce GUI: authentication, product browsing, cart, and secure checkout.</p>
-          <a href="https://github.com/KaungSanThar420/Lazada-Online-Shopping-System" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+          <a href="https://github.com/KaungSanThar420/Lazada-Online-Shopping-System"
+             target="_blank" rel="noopener"
+             class="focus-ring inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
         </article>
 
         <!-- Project 3: Smart Automated Plant Watering System -->
         <article class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 p-6 border border-gray-700">
-          <a class="card-link block" href="https://github.com/KaungSanThar420/Smart-Plant-Watering-IoT" target="_blank" rel="noopener" aria-label="Smart Plant Watering IoT on GitHub">
-            <h4 class="text-2xl font-semibold text-white mb-2 hover:text-teal-300 transition-colors">
-              Smart Automated Plant Watering System
-            </h4>
-          </a>
+          <h4 class="text-2xl font-semibold text-white mb-2">Smart Automated Plant Watering System</h4>
           <p class="text-gray-400 mb-4">IoT system with soil moisture sensing and microcontroller-driven watering for optimal plant health.</p>
-          <a href="https://github.com/KaungSanThar420/Smart-Plant-Watering-IoT" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+          <a href="https://github.com/KaungSanThar420/Smart-Plant-Watering-IoT"
+             target="_blank" rel="noopener"
+             class="focus-ring inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
         </article>
 
         <!-- Project 4: Breast Cancer Classification -->
         <article class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 p-6 border border-gray-700">
-          <a class="card-link block" href="https://github.com/KaungSanThar420/Breast-Cancer-Classification" target="_blank" rel="noopener" aria-label="Breast Cancer Classification on GitHub">
-            <h4 class="text-2xl font-semibold text-white mb-2 hover:text-teal-300 transition-colors">
-              Breast Cancer Classification
-            </h4>
-          </a>
+          <h4 class="text-2xl font-semibold text-white mb-2">Breast Cancer Classification</h4>
           <p class="text-gray-400 mb-4">ML classification using Logistic Regression and Random Forest with EDA and feature correlation analysis.</p>
-          <a href="https://github.com/KaungSanThar420/Breast-Cancer-Classification" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+          <a href="https://github.com/KaungSanThar420/Breast-Cancer-Classification"
+             target="_blank" rel="noopener"
+             class="focus-ring inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
         </article>
 
         <!-- Project 5: SneakerVerse E-commerce Website -->
         <article class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 p-6 border border-gray-700">
-          <a class="card-link block" href="https://github.com/KaungSanThar420/SneakerVerse" target="_blank" rel="noopener" aria-label="SneakerVerse on GitHub">
-            <h4 class="text-2xl font-semibold text-white mb-2 hover:text-teal-300 transition-colors">
-              SneakerVerse E-commerce Website
-            </h4>
-          </a>
+          <h4 class="text-2xl font-semibold text-white mb-2">SneakerVerse E-commerce Website</h4>
           <p class="text-gray-400 mb-4">
             Multi-page responsive sneaker shop (Web 1 final). Product search, brand filter, sorting, and cart with JavaScript, jQuery, LocalStorage. Ajax used for product loading and contact handling.
           </p>
-          <a href="https://github.com/KaungSanThar420/SneakerVerse" target="_blank" rel="noopener" class="inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
+          <a href="https://github.com/KaungSanThar420/SneakerVerse"
+             target="_blank" rel="noopener"
+             class="focus-ring inline-block text-teal-400 hover:text-teal-300 font-medium transition-colors">View on GitHub →</a>
         </article>
 
       </div>
@@ -146,9 +143,9 @@
         I'm excited about new opportunities. Feel free to reach out!
       </p>
       <div class="flex flex-wrap justify-center gap-3 md:gap-4">
-        <a href="mailto:mgkaungsanthar@gmail.com" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">Email Me</a>
-        <a href="https://github.com/KaungSanThar420" target="_blank" rel="noopener" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">GitHub</a>
-        <a href="https://www.linkedin.com/in/kaung-san-thar-645839265" target="_blank" rel="noopener" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">LinkedIn</a>
+        <a href="mailto:mgkaungsanthar@gmail.com" class="focus-ring bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">Email Me</a>
+        <a href="https://github.com/KaungSanThar420" target="_blank" rel="noopener" class="focus-ring bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">GitHub</a>
+        <a href="https://www.linkedin.com/in/kaung-san-thar-645839265" target="_blank" rel="noopener" class="focus-ring bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">LinkedIn</a>
       </div>
     </section>
   </main>
